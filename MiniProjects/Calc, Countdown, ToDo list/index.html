@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="components/calc.css" />
+    <link rel="stylesheet" href="components/styleTodo.css" />
+    <link rel="stylesheet" href="components/sideBarStyle.css" />
+    <link rel="stylesheet" href="components/countdown.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Some projects</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <nav class="main-nav">
+        <div class="toggle-btn">
+          <div></div>
+        </div>
+      </nav>
+
+      <header class="main-header">
+        <ul>
+          <li class="showCalc side"><a href="#">Calculator</a></li>
+          <li class="showDate side"><a href="#">Countdown</a></li>
+        </ul>
+      </header>
+      <div class="overlay"></div>
+    </div>
+    <div class="container">
+      <div class="todo_list">
+        <h1>To do list</h1>
+        <div class="create_new_todo">
+          <input type="text" class="message" placeholder="message" autofocus />
+          <button class="add">Add item</button>
+        </div>
+        <div class="wrapper">
+          <ul class="todo"></ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-count main">
+      <div class="counter">
+        <h1 class="label">Enter you date</h1>
+        <form action="" class="input">
+          <input class="input-form year" type="text" placeholder="Year" />
+          <input class="input-form month" type="text" placeholder="Month" />
+          <input class="input-form day" type="text" placeholder="Day" />
+          <input class="button-send" type="button" value="submit" />
+        </form>
+        <div class="container-nums">
+          <div class="days num">
+            <p class="big-text" id="days">0</p>
+            <span>days</span>
+          </div>
+          <div class="hoursv num">
+            <p class="big-text" id="hours">0</p>
+            <span>hours</span>
+          </div>
+          <div class="minutes num">
+            <p class="big-text" id="minutes">0</p>
+            <span>minutes</span>
+          </div>
+          <div class="seconds num">
+            <p class="big-text" id="seconds">0</p>
+            <span>seconds</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-calc main" id="hidden">
+      <div class="calc">
+        <div class="calc-input">
+          <div class="previous-operated"></div>
+          <div class="current-operated"></div>
+        </div>
+        <button class="calcC span-two" id="clear">AC</button>
+        <button class="calcC" id="del">Del</button>
+        <button class="calcs" id="sQrt">√</button>
+        <button class="calc-number" id="bt">1</button>
+        <button class="calc-number" id="bt">2</button>
+        <button class="calc-number" id="bt">3</button>
+        <button class="calcs" id="operation">+</button>
+        <button class="calc-number" id="bt">4</button>
+        <button class="calc-number" id="bt">5</button>
+        <button class="calc-number" id="bt">6</button>
+        <button class="calcs" id="operation">-</button>
+        <button class="calc-number" id="bt">7</button>
+        <button class="calc-number" id="bt">8</button>
+        <button class="calc-number" id="bt">9</button>
+        <button class="calcs" id="operation">/</button>
+        <button class="calc-number" id="bt">0</button>
+        <button class="calcs" id="operation">*</button>
+        <button class="calcs" id="answer">=</button>
+        <button class="calc-number" id="bt">.</button>
+      </div>
+    </div>
+    <script src="components/calc.js"></script>
+    <script src="components/todo.js"></script>
+    <script src="components/countdown.js"></script>
+    <script src="components/sideBar.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

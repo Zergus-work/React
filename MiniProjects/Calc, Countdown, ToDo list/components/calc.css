@@ -1,0 +1,61 @@
+.container-calc ::before,
+::after {
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: normal;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.calc {
+  width: 400px;
+  height: 650px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+
+  justify-content: right;
+  align-content: space-between;
+}
+.calc > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 2px solid rgb(255, 255, 255);
+  color: white;
+  background-color: rgb(100, 100, 100);
+  margin: 10px;
+}
+
+.calc > button:hover {
+  background-color: black;
+}
+.span-two {
+  grid-column: span 2;
+  width: 90%;
+}
+.calc-input {
+  margin-top: 10px;
+  grid-column: 1 / -1;
+  background-color: rgb(31, 31, 31);
+  color: rgba(185, 183, 183, 0.75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 6px;
+  flex-direction: column;
+  word-wrap: break-word;
+  word-break: break-all;
+  font-size: 1.5rem;
+  width: 95%;
+  margin: 10px;
+}
+
+.current-operated {
+  color: white;
+  font-size: 2rem;
+}
+#hidden {
+  display: none;
+}
