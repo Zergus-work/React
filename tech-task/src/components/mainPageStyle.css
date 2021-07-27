@@ -1,0 +1,140 @@
+.header {
+  position: sticky;
+  margin: 0;
+  width: 100%;
+  height: 2.5rem;
+  background-color: #696969;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.label {
+  position: static;
+  width: 318px;
+  height: 38px;
+  left: 16px;
+  top: 4px;
+  margin-left: 20px;
+
+  font-family: Saira Stencil One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 38px;
+  color: #e8e8e8;
+}
+.container-home {
+  display: grid;
+  grid-template-columns: 2fr 1.6fr;
+  height: 89.4vh;
+  width: 100%;
+  margin: 0;
+  border: 0;
+}
+.footer {
+  position: sticky;
+  background-color: #696969;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 2.5rem;
+}
+.author {
+  max-height: 100%;
+  height: 31px;
+  font-family: Saira;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 20px;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.developer {
+  width: 130px;
+  height: 31px;
+  font-family: Saira;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 20px;
+  line-height: 31px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  color: #cbcaca;
+}
+h2 {
+  margin: 0;
+}
+.product {
+  border-right: 2px solid rgba(175, 163, 163, 0.5);
+}
+.information {
+  width: 97%;
+  margin-left: 0.5em;
+  display: grid;
+  max-height: 100%;
+}
+
+.container-input {
+  width: 100%;
+  height: 40%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-top: 0.5em;
+  border: 0;
+  grid-column-gap: 0.7em;
+  grid-row-gap: 0.5em;
+  max-height: 15rem;
+
+  padding-bottom: 2em;
+
+  padding-bottom: 0.5em;
+}
+input {
+  width: 100%;
+  height: 1.6rem;
+  background-color: rgba(177, 177, 177, 0.3);
+}
+button {
+  height: 1.6rem;
+  width: 101%;
+  background-color: #717171;
+}
+.descr {
+  width: 202%;
+  height: 6.5rem;
+}
+input,
+button,
+.descr {
+  border-radius: 6px;
+
+  color: white;
+  border: 0;
+}
+.statistic {
+  border-top: 2px solid rgba(175, 163, 163, 0.5);
+  display: grid;
+  font-family: Saira;
+  font-size: 0.8em;
+  line-height: 180%;
+  letter-spacing: 0.08em;
+  color: #000000;
+  position: absolute;
+  font-weight: bold;
+  top: 19rem;
+  width: 43.5%;
+}
+.stats {
+  color: #000000;
+  font-weight: 1000;
+}
+
+#numInfo {
+  font-weight: bolder;
+}
