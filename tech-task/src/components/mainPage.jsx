@@ -1,8 +1,24 @@
 import React, { Component } from "react";
 import "./mainPageStyle.css";
+import Product from "./prodItem";
+import StatsPage from "./statsPage";
+import InputForm from "./inputForm";
+import { getData } from "./bikeData";
 
 class MainPage extends Component {
-  state = {};
+  state = {
+    products: getData(),
+    propss: "",
+  };
+
+  componentDidMount() {
+    console.log("mounted");
+  }
+
+  getStatus = (z) => {
+    return z;
+  };
+
   render() {
     return (
       <div className="main">
@@ -10,35 +26,12 @@ class MainPage extends Component {
           <h2 className="label">ADMIN.BIKE-BOOKING.COM</h2>
         </div>
         <div className="container-home">
-          <div className="product column ">Bycicle</div>
+          <div className="product column ">
+            <Product items={this.state.products} />
+          </div>
           <div className="information column">
-            <div className="container-input">
-              <input type="text" placeholder="Name" />
-              <input type="text" placeholder="Type" />
-              <input type="text" placeholder="Color" />
-              <input type="text" placeholder="Wheel size" />
-              <input type="text" placeholder="Price" />
-              <input type="text" placeholder="ID(slug):XXXXXXXXXXXXX" />
-              <input className="descr" type="text" placeholder="Descriprion" />
-              <div></div>
-              <button>SAVE</button>
-              <button>CLEAR</button>
-            </div>
-            <div className="statistic">
-              <h2 className="stats">STATISTICS</h2>
-              <span>
-                Total bikes: <span id="numInfo">15</span>
-              </span>
-              <span>
-                Avaible Bikes: <span id="numInfo"> 0</span>
-              </span>
-              <span>
-                Booked Bikes: <span id="numInfo"></span>456
-              </span>
-              <span>
-                Average bike cost: <span id="numInfo"> 21 UAH/hr.</span>
-              </span>
-            </div>
+            <InputForm refresh={this.refreshState} />
+            <StatsPage products={this.state.products} />
           </div>
         </div>
         <div className="footer">
