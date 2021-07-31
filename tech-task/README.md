@@ -21,9 +21,16 @@ number of booked bicycles, avg price of a bicycle)
 
 
 Form data validation:
+
 ○ All text fields minimum length should be 5 characters
+
+
 ○ All number fields should accept only number
+
+
 ○ All fields are required
+
+
 ○ All Bike IDs should be unique (NOT ready yet)
 
 
@@ -31,4 +38,4 @@ Form data validation:
  
  
  
- to run this app you must clone this folder to your local memory, open cloned folder in integreated terminal and enter  'npm install'  than  'npm start'
+ To run this app you must clone this folder to your local memory, open cloned folder in integreated terminal and enter  'npm install'  than  'npm start'
