@@ -8,15 +8,14 @@ import { getData } from "./bikeData";
 class MainPage extends Component {
   state = {
     products: getData(),
-    propss: "",
   };
 
-  componentDidMount() {
-    console.log("mounted");
-  }
+  handleSubmit = () => {
+    this.setState({ products: getData() });
+  };
 
-  getStatus = (z) => {
-    return z;
+  getState = () => {
+    return this.state.products;
   };
 
   render() {
@@ -27,10 +26,10 @@ class MainPage extends Component {
         </div>
         <div className="container-home">
           <div className="product column ">
-            <Product items={this.state.products} />
+            <Product submit={this.handleSubmit} items={this.state.products} />
           </div>
           <div className="information column">
-            <InputForm refresh={this.refreshState} />
+            <InputForm submit={this.handleSubmit} />
             <StatsPage products={this.state.products} />
           </div>
         </div>

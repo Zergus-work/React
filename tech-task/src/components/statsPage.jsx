@@ -8,7 +8,7 @@ class StatsPage extends Component {
     }, 0);
 
   averageCost = (x) => {
-    return Math.floor(x.reduce((x, y) => (x += y.price), 0) / x.length);
+    return Math.floor(x.reduce((x, y) => (x += Number(y.price)), 0) / x.length);
   };
 
   render() {
@@ -16,31 +16,31 @@ class StatsPage extends Component {
     return (
       <div className="statistic">
         <h2 className="stats">STATISTICS</h2>
-        <span>
+        <div className="statsRow">
           Total bikes:{" "}
           <span id="numInfo">
             <b>{products.length}</b>
           </span>
-        </span>
-        <span>
-          Avaible Bikes:{" "}
+        </div>
+        <div className="statsRow">
+          Avaliable Bikes:{" "}
           <span id="numInfo">
             <b>{this.getStatus("Avaliable")}</b>{" "}
           </span>
-        </span>
-        <span>
+        </div>
+        <div className="statsRow">
           Booked Bikes:{" "}
           <span id="numInfo">
-            <b>{this.getStatus("Booked")}</b>{" "}
+            <b>{this.getStatus("Busy")}</b>{" "}
           </span>
-        </span>
-        <span>
+        </div>
+        <div className="statsRow">
           Average bike cost:{" "}
           <span id="numInfo">
             {" "}
             <b>{this.averageCost(products).toFixed(2)}</b> UAH/hr.
           </span>
-        </span>
+        </div>
       </div>
     );
   }

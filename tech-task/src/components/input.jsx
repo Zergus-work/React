@@ -1,15 +1,27 @@
-import React, { Component } from "react";
+import React from "react";
 
-const Input = ({ name, value, placeholder, onChange }) => {
+const Input = ({
+  name,
+  value,
+  placeholder,
+  onChange,
+  error,
+  type = "text",
+}) => {
   return (
-    <input
-      onChange={onChange}
-      value={value[name]}
-      name={name}
-      id={name}
-      type="text"
-      placeholder={placeholder}
-    />
+    <React.Fragment>
+      <div>
+        <input
+          onChange={onChange}
+          value={value[name]}
+          name={name}
+          type={type}
+          id={name}
+          placeholder={placeholder}
+        />
+        {error && <div className="container-error">{error}</div>}
+      </div>
+    </React.Fragment>
   );
 };
 
