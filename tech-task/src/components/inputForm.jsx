@@ -16,6 +16,7 @@ class InputForm extends Component {
     },
     errors: {},
   };
+
   handleClear = (e) => {
     this.setState({
       newBike: {
@@ -58,13 +59,9 @@ class InputForm extends Component {
 
   handleSubmit = (e, data) => {
     e.preventDefault();
-
     let errors = this.validate();
-
     this.setState({ errors: errors || {} });
-
     if (errors) return;
-
     addData(data);
     this.handleClear();
     this.props.submit();
@@ -75,7 +72,6 @@ class InputForm extends Component {
     const errorMessage = this.validateProperty(input);
     if (errorMessage) errors[input.name] = errorMessage;
     else delete errors[input.name];
-
     const newBike = { ...this.state.newBike };
     newBike[input.name] = input.value;
     this.setState({ newBike, errors });
@@ -130,7 +126,7 @@ class InputForm extends Component {
               onChange={this.handleChange}
               value={newBike}
               name="_id"
-              placeholder="Enter UNIQUE ID"
+              placeholder="Enter unique ID"
               error={errors._id}
             />
           </div>

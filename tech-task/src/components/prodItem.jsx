@@ -53,6 +53,7 @@ class Product extends Component {
             </span>
           </div>
           <div className="id">ID: {x._id}</div>
+
           <div className="container-status">
             STATUS:
             <select
@@ -67,6 +68,7 @@ class Product extends Component {
             </select>
           </div>
         </div>
+
         <div className="del">
           <div className="div delBtn">
             <div
