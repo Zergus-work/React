@@ -1,3 +1,4 @@
+{bikes :[
 {
     "name": "Merida",
     "status": "Avaliable",
@@ -30,6 +31,7 @@
     "_id": "1524689759652",
     "description":
       "sdfsd fsd  sdf sdfsdfsdfsdf f sdsdfs df sdf sdf sd f sdf s df sf  sdf ",
-  }
+  } ]
+}
   
   
