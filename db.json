@@ -1,0 +1,33 @@
+{
+    name: "Merida",
+    status: "Avaliable",
+    type: "cross",
+    color: "black",
+    price: "500",
+    whellSize: "26",
+    _id: "1524689759651",
+    description:
+      "sdfsd fsd  sdf sdfsdfsdfsdf f sdsdfs df sdf sdf sd f sdf s df sf  sdf ",
+  },
+  {
+    name: "Trek",
+    status: "Busy",
+    type: "dirt",
+    color: "white",
+    price: "1500",
+    whellSize: "28",
+    _id: "1524689759652",
+    description:
+      "sdfsd fsd  sdf sdfsdfsdfsdf f sdsdfs df sdf sdf sd f sdf s df sf  sdf ",
+  },
+  {
+    name: "Trek",
+    status: "Unavaliable",
+    type: "mountain",
+    color: "white",
+    price: "1500",
+    whellSize: "28",
+    _id: "1524689659653",
+    description:
+      "sdfsd fsd  sdf sdfsdfsdfsdf f sdsdfs df sdf sdf sd f sdf s df sf  sdf ",
+  }
